@@ -1,0 +1,32 @@
+笔记：
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 网页中多个空格，默认情况下被浏览器解析成一个空格 -->
+    <p>Test for p tag.       here test white space!</p>
+</body>
+</html>
+
+1. 网页 html5 文档说明置顶 <!doctype html>
+
+2. 通过meta标签来设置网页的字符集，避免乱码
+
+元素分类：
+	块元素 (block element)
+		- 在网页中一般通过块元素对页面进行布局。
+		
+	行内元素 又称内联元素 (inline element)
+		- 行内元素主要用于包裹文字。
+		- 一般情况下会在块元素中放行内元素，而不会在行内元素中放块元素。
+		- p元素中不能放任何块元素
+	html标签语法不强制报错，原因是浏览器会宽容解析
+	
+<header></header>
+<main></main>
+<footer></footer>
