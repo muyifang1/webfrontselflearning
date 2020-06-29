@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>复合选择器</title>
+    <style>
+        .red{
+            color:red;
+        }
+        /*
+            将class=red的div字体大小设置为 30px
+            交集选择器：
+                同时符合多个条件的元素
+                语法：选择器1选择器2选择器3选择器n{}
+                之间是 AND 关系
+        注意：如果有元素选择器，必须使用元素选择器开头。
+        */
+        div.red{
+            font-size:30px;
+        }
+        .red.test.abc{
+            color:green;
+            font-size: 25px;
+        }
+        /*
+            并集选择器(选择器分组)
+                作用:同时选择多个选择器对象的元素；
+                语法：选择器1，选择器2，选择器n
+                之间是 OR 关系
+        */
+        h1,span{
+            color:brown;
+            font-size:30px;            
+        }
+    </style>
+</head>
+<body>
+    <div class="red">我是div标签</div>
+    <p class="red">我是p标签,测试选择器，不符合</p>
+    <p class="red test abc">我是p标签</p>
+    <h1>我是h1标签</h1>
+    <span>这是span标签</span>
+</body>
+</html>

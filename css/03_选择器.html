@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常用选择器</title>
+    <style>
+        /*
+            将所有的段落设置为 红色字体
+
+            元素选择器
+                作用：根据标签名来选中指定的元素。
+        */
+/*
+        p{
+            color:blue;
+        }
+*/
+        h1{
+            color:green;
+            font-size:20px;
+        }
+        /*
+            id选择器：
+                作用：根据元素id属性值选中一个元素。
+        */
+        #first{
+            color:brown;
+        }
+        /*
+            类选择器：
+                作用：根据元素的class属性值选中的一组元素。
+                语法：.class 属性值
+        */
+        .red{
+            color:red;
+        }
+        /*
+            通配选择器
+                作用：选中页面中的所有元素
+                语法：*
+        */
+        *{
+            color:blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>酬乐天扬州初逢席上见赠</h1>
+    <p id="first">巴山楚水凄凉地，</p>
+    <p>二十三年弃置身。</p>
+    <!--
+        class 是一个标签的属性，它和id类似，不同的是class可以重复使用
+            可以通过class属性来为元素分组。
+            可以同时给一个元素赋值多个
+    -->
+    <p class="red">怀旧空吟闻笛赋，</p>
+    <p class="red">到乡翻似烂柯人。</p>
+    <p >沉舟侧畔千帆过，</p>
+    <p>病树前头万木春。</p>
+    <p>今日听君歌一曲，</p>
+    <p>暂凭杯酒长精神。</p>
+</body>
+</html>
