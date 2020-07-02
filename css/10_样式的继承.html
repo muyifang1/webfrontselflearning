@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>样式的继承</title>
+    <style>
+        /*
+            样式的继承，我们为一个元素设置的样式同时也会应用到它的后台元素上。
+            继承是发生在祖先和后代之间的
+
+            继承的设计是为了方便我们的开发，
+                利用继承
+            
+            注意：并不是所有样式都会被集成：
+                - 比如：背景相关的，布局相关等的这些样式 都不会被继承。
+        */
+        p {
+            color: red;
+        }
+
+        div {
+            color: greenyellow;
+        }
+    </style>
+</head>
+<p>
+    <!-- 注意p标签内 不能放块元素 -->
+    <span>我是一个p元素中的span</span>
+</p>
+
+<span>I'm the span out of the p.</span>
+
+<div>
+    div
+    <span>
+        div -> span
+        <em>div -> span -> em</em>
+    </span>
+</div>
+
+<body>
+
+</body>
+
+</html>
