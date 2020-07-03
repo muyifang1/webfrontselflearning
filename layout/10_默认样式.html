@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*
+            默认样式
+                - 通常情况下，浏览器会为元素设置一些默认样式。
+                - 默认样式的存在会影响页面的布局。
+                    通常情况下编写网页要去除浏览器的默认样式
+        */
+        .box1 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*
+           更好的解决方案：有重置样式表的标准模板.css文件
+        */
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+    <ul>
+        <li>列表项1</li>
+        <li>列表项2</li>
+    </ul>
+</body>
+
+</html>

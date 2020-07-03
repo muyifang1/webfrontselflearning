@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子垂直布局</title>
+    <style>
+        .outer {
+            background-color: yellowgreen;
+            height: 100px;
+            /*
+                默认情况下父元素的高度被内容撑开
+            */
+            /*
+                如果子元素大小超过了父元素，则子元素会从父元素中溢出
+                使用overflow属性来设置父元素如何处理溢出的子元素
+
+                可选值：
+                    - visible 默认值，子元素会从父元素中溢出
+                    - hidden 溢出内容将会被裁剪，不显示
+                    - scroll 生成两个滚动条
+                    - auto 根据需要生成滚动条
+            */
+            overflow: auto;
+        }
+
+        .inner {
+            width: 100px;
+            background-color: yellow;
+            height: 200px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner">This is a test content. Test lineThis is a test content. Test lineThis is a test content.This
+            is a test content. Test lineThis is a test content. Test lineThis is a test content. Test lineThis is a test
+            content. Test line
+            Test lineThis is a test content. Test lineThis is a test content. Test line</div>
+    </div>
+</body>
+
+</html>

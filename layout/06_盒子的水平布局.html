@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子的水平布局</title>
+    <style>
+        .outer {
+            width: 800px;
+            height: 200px;
+            border: 10px red solid;
+        }
+
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+            /*
+                元素的水平方向的布局：
+重要！！！           元素在其父元素中,水平布局必须满足下面的等式：
+(margin-left)+(border)+(padding-left)+(width)+(padding-right)+(border)+(margin-right) = 父元素内容区域宽度 
+上述等式必须满足，如果不满足，则自动调整margin-right 以达到相等
+
+            上述七个值中有三个值可以设置为 auto
+                width
+                margin-left
+                margin-right
+                - 如果某个值为auto，则会自动调整auto那个值 以使等式成立
+
+                - 如果一个宽度和一个外边距设置为 auto 则宽度调整到最大，设置auto的外边距会自动为0
+                - 如果将三个值都设置为auto，则外边距 都是0，宽度最大
+                - 如果将两个外边距设置为auto，宽度固定，则会居中显示
+
+                示例：
+                    width：xxxpx;
+                    margin:0 auto;
+            */
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+
+</html>

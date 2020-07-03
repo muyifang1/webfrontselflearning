@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单位</title>
+    <style>
+        /*
+            注意：同样200px不同设备下显示效果不同
+
+            长度单位：
+                像素
+
+                百分比
+                    - 相对于父元素属性的百分比。
+                    - 使用百分比，可以使子元素跟随父元素的改变而改变。
+
+                em
+                    - em是相对于元素的字体大小来计算的
+                    - 1 em = 1 font-size
+                    - em会根据字体大小的改变而改变
+
+                rem
+                    - rem是相对于根元素的字体大小来计算
+                    - 多用于移动端适配
+        */
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+
+        .box2 {
+            width: 50%;
+            height: 50%;
+            background-color: skyblue;
+        }
+
+        .box3 {
+            font-size: 15px;
+            width: 10em;
+            height: 10em;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+
+    <div class="box3"></div>
+</body>
+
+</html>
