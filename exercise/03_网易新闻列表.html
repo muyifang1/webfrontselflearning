@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易新闻列表</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        body {
+            background-color: #bfa;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* 设置容器的样式 */
+        .news-wrapper {
+            /*宽度*/
+            width: 300px;
+            /*高度*/
+            height: 357px;
+            /*居中*/
+            margin: 50px auto;
+            /*设置背景颜色，显示轮廓*/
+            background-color: #fff;
+            /*设置上边框*/
+            border-top: 1px solid #bfa;
+        }
+
+        /* 设置news-title*/
+        .news-title {
+            /*目的是让上边框与字同宽*/
+            display: inline-block;
+            height: 30px;
+            border-top: 1px solid red;
+            margin-top: -1px;
+            padding-top: 10px;
+        }
+
+        /* 设置图片样式 */
+        .news-img {
+            height: 150px;
+        }
+
+        /*图片标题样式*/
+        .news-img .img-title {
+            /*标题上移到图片中*/
+            margin-top: -30px;
+            /*标题白色 在图片中显示*/
+            color: #fff;
+
+            font-weight: bold;
+
+            padding-left: 30px;
+        }
+
+        .news-list {
+            font-size: 12px;
+            margin-top: 18px;
+            list-style: square;
+        }
+
+        .news-list li {
+            margin-bottom: 16px;
+        }
+
+        .news-list li a {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .news-list li a:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 创建新闻列表的外侧容器 -->
+    <div class="news-wrapper">
+        <h2 class="news-title">
+            <a href="#">体育</a>
+        </h2>
+
+        <!-- 创建一个图片容器 -->
+        <div class="news-img">
+            <img src="./img/03/1.jpeg" alt="费德勒">
+            <h3 class="img-title">
+                费德勒首负迪米 扶额头不满发挥
+            </h3>
+        </div>
+
+        <!-- 新闻列表容器容器 -->
+        <div class="news-list">
+            <li><a href="#">乔治：我爱LA喜欢和LBJ一起打球</a></li>
+            <li><a href="#">格林：3年前降薪就在等KD 特制T恤嘲讽LBJ</a></li>
+            <li><a href="#">洛克4000双鞋让保罗羡慕嫉妒 乔丹被震惊</a></li>
+            <li><a href="#">CBA下赛季新赛制：常规赛4组循环 增至46轮</a></li>
+        </div>
+    </div>
+
+</body>
+
+</html>

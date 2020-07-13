@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮廓和圆角</title>
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: blanchedalmond;
+            /*
+                box-shadow 用来设置元素的阴影效果，阴影不会影响页面布局
+                    第一个值 水平偏移量 正值向右移动，负值向左移动
+                    第二个值 垂直偏移量
+                    第三个值 模糊半径
+                    第四个值 阴影颜色
+            */
+            box-shadow: 10px 10px 15px rgb(0, 0, 0, .3);
+        }
+
+        .box1:hover {
+            /*outline 是div的轮廓，大小不影响给下面span的位置*/
+            outline: 10px red solid;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: orangered;
+            /*
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 200px;
+            */
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <span>Hello world!</span>
+
+    <div class="box2"></div>
+</body>
+
+</html>
